@@ -9,6 +9,7 @@
 <!-- Here is where you will have your data inputted by user to query -->
 Customer ID: <input id="cid" type="type" data-key="CustomerID" class="input-data"><br />
 First Name: <input id="fname" type="type" data-key="FirstName" class="input-data"><br />
+Middle Name: <input id="mname" type="type" data-key="MiddleName" class="input-data"><br />
 Last Name: <input id="lname" type="type" data-key="LastName" class="input-data"><br />
 Email Address: <input id="email" type="type" data-key="Email" class="input-data"><br />
 Mobile Number: <input id="mblenmb" type="type" data-key="Mobile" class="input-data"><br />
@@ -45,6 +46,7 @@ Mobile Number: <input id="mblenmb" type="type" data-key="Mobile" class="input-da
   //variables to retrieve data from the inputs and hold them
   var cidbox = document.getElementById('cid');
   var fnamebox = document.getElementById('fname');
+  var mnamebox = document.getElementById('mname');
   var lnamebox = document.getElementById('lname');
   var emailbox = document.getElementById('email');
   var mblenmbbox = document.getElementById('mblenmb');
@@ -80,6 +82,7 @@ Mobile Number: <input id="mblenmb" type="type" data-key="Mobile" class="input-da
 	set(newCustomerRef, {
 			CustomerID: cidbox.value,
 			FirstName: fnamebox.value,
+			MiddleName: mnamebox.value,
 			LastName: lnamebox.value,
 			Email: emailbox.value,
 			Mobile: mblenmbbox.value
@@ -104,6 +107,7 @@ Mobile Number: <input id="mblenmb" type="type" data-key="Mobile" class="input-da
 	update(newCustomerRef, {
 			CustomerID: cidbox.value,
 			FirstName: fnamebox.value,
+			MiddleName: mnamebox.value,
 			LastName: lnamebox.value,
 			Email: emailbox.value,
 			Mobile: mblenmbbox.value
